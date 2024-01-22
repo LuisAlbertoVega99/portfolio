@@ -1,202 +1,239 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins&family=Roboto:wght@400;500&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins&family=Roboto:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-:root{
-    --vartextcolor : #fff;
-    --backgroundcolor : rgb(17, 23, 43);
+:root {
+  --vartextcolor: #fff;
+  --backgroundcolor: rgb(17, 23, 43);
 }
-body{
-    background-color: rgb(17, 23, 43);
-    position: relative;
+body {
+  background-color: rgb(17, 23, 43);
+  position: relative;
 }
-h2{
-    font-family: 'Roboto';
+h2 {
+  font-family: "Roboto";
 }
-p{
-    font-family: 'Montserrat';
+p {
+  font-family: "Montserrat";
 }
-.header{
-    width: 100%;
-    background-color: rgb(174, 40, 211);
-    display: flex;
-    position: relative;
+.header {
+  width: 100%;
+  background-color: rgb(174, 40, 211);
+  display: flex;
+  position: relative;
 }
-.header .nav-menu{
-    display: flex;
-    width: 100%;
-    justify-content: center;
+.header .nav-menu {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
-.header .buttons{
-    width: 20%;
-    display: flex;
-    justify-content: center;
+.header .buttons {
+  width: 20%;
+  display: flex;
+  justify-content: center;
 }
-.btn-header{
-    background-color: rgb(174, 40, 211);
-    border: none;
-    font-size: 3rem;
-    cursor: pointer;
+.btn-header {
+  background-color: rgb(174, 40, 211);
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
 }
-.header .nav-menu li{
-    list-style: none;
-    margin: 10px;
-    font-size: 1rem;
-    padding: 10px;
-    border-radius: 15px;
-    transition: 0.5s all ease-in-out;
-    font-family: 'Open Sans';
+.header .nav-menu li {
+  list-style: none;
+  margin: 10px;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 15px;
+  transition: 0.5s all ease-in-out;
+  font-family: "Open Sans";
 }
-.header .nav-menu li a{
-    text-decoration: none;
-    color: var(--vartextcolor);
+.header .nav-menu li a {
+  text-decoration: none;
+  color: var(--vartextcolor);
 }
-.header .nav-menu li:hover{
-    background-color: rgb(17, 23, 43);
+.header .nav-menu li:hover {
+  background-color: rgb(17, 23, 43);
 }
-section{
-    padding: 20px;
+section {
+  padding: 20px;
 }
-.about-me{
-    width: 100%;
-    height: 100vh;
-    
+.about-me {
+  width: 100%;
+  height: 100vh;
 }
-.about-me .content *{
-    margin: 10px;
-    
+.about-me .content * {
+  margin: 10px;
 }
-.about-me .content{
-    color: #fff;
-    width: 100%;
-    padding: 15px;
-    text-align: center;
+.about-me .content {
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+.projects {
+  color: #fff;
+}
+.projects-card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: space-evenly;
+}
+.projects .card {
+  position: relative;
+  width: 400px;
+  height: 550px;
+  background-color: rgb(17, 23, 43);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
+}
+.projects .card .img {
+  position: relative;
+  width: 100%;
+  height: 290px;
+  background-color: red;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.projects .card .img img {
+  width: 100%;
+  height: 100%;
+}
+.projects .card .img::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -10px 10px 0 rgb(17, 23, 43);
+}
+.projects .card .img::after {
+  content: "";
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -10px 10px 0 rgb(17, 23, 43);
+}
+.projects .card .content {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-color: #232949;
+  border-radius: 15px;
+  border-top-left-radius: 0;
+}
+.projects .card .content .title-project {
+  position: absolute;
+  height: 80px;
+  top: -80px;
+  width: 50%;
+  background: #232949;
+  border-top: 10px solid rgb(17, 23, 43);
+  border-right: 10px solid rgb(17, 23, 43);
+  border-top-right-radius: 25px;
+}
+.projects .card .content .title-project::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -25px;
+}
+.projects .card .content .title-project::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -25px;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -10px 10px 0 #232949;
+}
+.projects .card .content .title-project a {
+  position: relative;
+  background: #fff;
+  padding: 10px 20px;
+  margin: 15px 15px;
+  display: block;
+  border-radius: 7px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.projects .card .content p,
+h4 {
+  padding: 8px;
+}
+.skills {
+  color: #fff;
+}
 
+.cards-skills {
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.projects{
-    color: #fff;
+.cards-skills .card {
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+  margin: 5px;
+  text-align: center;
+  position: relative;
+  border: 1px solid #1234;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.projects-card{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-    justify-content: space-evenly;
-    
-}
-.projects .card{
+.cards-skills .card .rating{
     position: relative;
-    width: 400px;
-    height: 550px;
-    background-color: rgb(17, 23, 43);;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 5px;
-}
-.projects .card .img{
-    position: relative;
-    width: 100%;
-    height: 290px;
-    background-color: red;
-    border-radius: 15px;
-    overflow: hidden;
-}
-.projects .card .img img{
     width: 100%;
     height: 100%;
+    background: #f00;
+}
+.cards-skills .card .rating .block{
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background-color: #000;
+    left: 50%;
+    transform-origin: 50% 100px;
+    animation: animate 0.1s linear forwards;
     
 }
-.projects .card .img::before{
-    content: '';
+@keyframes animate{
+    
+}
+.cards-skills .card .rating h2{
     position: absolute;
-    bottom: 0;
+    top: 50%;
     left: 50%;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -10px 10px 0 rgb(17, 23, 43);;
-}
-.projects .card .img::after{
-    content: '';
-    position: absolute;
-    bottom: 70px;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -10px 10px 0 rgb(17, 23, 43);;
-}
-.projects .card .content{
-    position: relative;
-    width: 100%;
-    height: 250px;
-    background-color: #232949;
-    border-radius: 15px;
-    border-top-left-radius: 0;
-}
-.projects .card .content .title-project{
-    position: absolute;
-    height: 80px;
-    top: -80px;
-    width: 50%;
-    background: #232949;
-    border-top: 10px solid rgb(17, 23, 43);
-    border-right: 10px solid rgb(17, 23, 43);
-    border-top-right-radius: 25px;
-}
-.projects .card .content .title-project::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: -25px;
-
-}
-.projects .card .content .title-project::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: -25px;
-    width: 25px;
-    height: 25px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -10px 10px 0 #232949;
-}
-.projects .card .content .title-project a{
-    position: relative;
-    background: #fff;
-    padding: 10px 20px;
-    margin: 15px 15px;
-    display: block;
-    border-radius: 7px;
-    font-weight: 600;
-    text-decoration: none;
-}
-.projects .card .content p,h4{
-    padding: 8px;
-}
-.skills{
+    transform: translate(-50%,-50%);
     color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5em;
 }
-
-.cards-skills{
-    width: 100%;
-    color: black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.cards-skills .card .rating h2 span{
+    font-size: 2.5em;
+    font-weight: 700;
 }
-.cards-skills .card{
-    width: 250px;
-    height: 300px;
-    border-radius: 15px;
-    margin: 5px;
-    text-align:center ;
-    position: relative;
-    border: 1px solid #1234;
-
+.cards-skills .card .rating h2 sup{
+    font-size: 1.5em;
+    font-weight: 300;
 }
