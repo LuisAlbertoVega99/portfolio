@@ -62,9 +62,11 @@ section{
 .about-me{
     width: 100%;
     height: 100vh;
+    
 }
 .about-me .content *{
     margin: 10px;
+    
 }
 .about-me .content{
     color: #fff;
@@ -85,9 +87,9 @@ section{
 }
 .projects .card{
     position: relative;
-    width: 300px;
-    height: 450px;
-    background-color: yellow;
+    width: 400px;
+    height: 550px;
+    background-color: rgb(17, 23, 43);;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -96,16 +98,86 @@ section{
 .projects .card .img{
     position: relative;
     width: 100%;
-    height: 240px;
+    height: 290px;
     background-color: red;
     border-radius: 15px;
-
+    overflow: hidden;
+}
+.projects .card .img img{
+    width: 100%;
+    height: 100%;
+    
+}
+.projects .card .img::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 rgb(17, 23, 43);;
+}
+.projects .card .img::after{
+    content: '';
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 rgb(17, 23, 43);;
 }
 .projects .card .content{
     position: relative;
     width: 100%;
-    height: 150px;
+    height: 250px;
     background-color: #232949;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+}
+.projects .card .content .title-project{
+    position: absolute;
+    height: 80px;
+    top: -80px;
+    width: 50%;
+    background: #232949;
+    border-top: 10px solid rgb(17, 23, 43);
+    border-right: 10px solid rgb(17, 23, 43);
+    border-top-right-radius: 25px;
+}
+.projects .card .content .title-project::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+
+}
+.projects .card .content .title-project::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #232949;
+}
+.projects .card .content .title-project a{
+    position: relative;
+    background: #fff;
+    padding: 10px 20px;
+    margin: 15px 15px;
+    display: block;
+    border-radius: 7px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.projects .card .content p,h4{
+    padding: 8px;
 }
 .skills{
     color: #fff;
