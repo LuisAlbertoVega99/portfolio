@@ -34,10 +34,10 @@ p {
   display: flex;
   justify-content: center;
 }
-.btn-header {
+.header .buttons  a{
   background-color: rgb(174, 40, 211);
   border: none;
-  font-size: 3rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 .header .nav-menu li {
@@ -240,4 +240,156 @@ h4 {
 .cards-skills .card::before{
     background: var(--clr);
     transform: rotate(calc((var(--i) - 50) * 0.01turn));
+}
+.contact-me h2{
+    color: #fff;
+}
+.social-network-list{
+    width: 100%;
+    list-style: none;
+    background-color: var(--backgroundcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.social-network-list::before{
+    content: attr(data-text);
+    transform: translate(-50%,calc(-50% + 120px));
+    font-size: 10vh;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+.social-network{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    border: 1px solid #fff;
+    width: 85px;
+    height: 85px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.social-network a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 85px;
+    text-decoration: none;
+    color:#fff;
+    transition: 1s;
+}
+.social-network a i{
+    font-size: 3em;
+}
+.social-network a:hover.facebook{
+    background: #3329f6;
+}
+.social-network a:hover.whatsapp{
+    background: #13b016;
+}
+.social-network a:hover.whatsapp{
+    background: #13b016;
+}.social-network a:hover.linkedin{
+    background: #1d8ed0;
+}
+.social-network a:hover.telegram{
+    background: #1dbadd;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: var(--backgroundcolor);
+    border-top: #fff solid 1px;
+}
+.footer .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.footer .container .sec h2{
+    position: relative;
+    color: aliceblue;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.footer .container .sec p{
+    color: #9d5ceb;
+}
+.footer .container .sci{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+}
+.footer .container .sci li {
+    list-style: none;
+}
+.footer .container .sci li a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #9d5ceb;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.footer .container .sci li a i{
+    color: #fff;
+    font-size: 20px;
+}
+.footer .container .quicklinks{
+    position: relative;
+}
+.footer .container .quicklinks ul li{
+    list-style: none;
+}
+.footer .container .quicklinks ul li a{
+    color: #9d5ceb;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.footer .container .contact .info{
+    position: relative;
+}
+.footer .container .contact .info li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+.footer .container .contact .info li span{
+    color: #9d5ceb;
+    font-size: 20px;
+}
+.footer .container .contact .info li a{
+    color: #9d5ceb;
+    text-decoration: none;
+}
+@media (max-width:991px){
+    .footer{
+        padding: 40px;
+    }
+    .footer .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+}
+@media (max-width:768px){
+    .footer .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+    }
 }

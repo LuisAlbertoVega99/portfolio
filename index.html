@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e865d8b960.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Portafolio | Luis Vega</title>
   </head>
   <body>
@@ -14,10 +18,6 @@
         <li><a href="#skills">Habilidades</a></li>
         <li><a href="#contact-me">Contactame</a></li>
       </ul>
-      <div class="buttons">
-        <button class="switch-background btn-header">☀️</button>
-        <button class="switch-language btn-header">🌎</button>
-      </div>
     </header>
     <main class="main">
       <section class="about-me" id="about-me">
@@ -129,35 +129,135 @@
           siguientes
         </p>
         <div class="cards-skills">
-          <div class="card" style="--i:90;--clr:#43f9a4;">
+          <div class="card" style="--i: 90; --clr: #43f9a4">
             <h3>85 <span>%</span></h3>
             <h4>HTML</h4>
           </div>
-          <div class="card" style="--i:60;--clr:#2ccde9;">
+          <div class="card" style="--i: 60; --clr: #2ccde9">
             <h3>60 <span>%</span></h3>
             <h4>CSS</h4>
           </div>
-          <div class="card" style="--i:80;--clr:#fb297b;">
+          <div class="card" style="--i: 80; --clr: #fb297b">
             <h3>80<span>%</span></h3>
             <h4>Javascript</h4>
           </div>
-          <div class="card" style="--i:85;--clr:#ffe047;">
+          <div class="card" style="--i: 85; --clr: #ffe047">
             <h3>85 <span>%</span></h3>
             <h4>React JS</h4>
           </div>
-          <div class="card" style="--i:90;--clr:#f09f24;">
+          <div class="card" style="--i: 90; --clr: #f09f24">
             <h3>90 <span>%</span></h3>
             <h4>Github</h4>
           </div>
-          <div class="card" style="--i:55;--clr:#dc24f0;">
+          <div class="card" style="--i: 55; --clr: #dc24f0">
             <h3>55 <span>%</span></h3>
             <h4>Spring Boot</h4>
           </div>
         </div>
       </section>
-      <section class="contact-me" id="contact-me"></section>
+      <section class="contact-me" id="contact-me">
+        <h2>Contactame</h2>
+        <div class="container-contact">
+          <ul class="social-network-list">
+            <li class="social-network" data-color="#df0c0c">
+              <a
+                href="https://www.facebook.com/luisalberto.vegamartinez.12"
+                target="_blank"
+                class="facebook"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+            </li>
+            <li class="social-network">
+              <a
+                href="https://wa.me/5562105997"
+                target="_blank"
+                class="whatsapp"
+                ><i class="fa fa-whatsapp" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="social-network">
+              <a
+                href="www.linkedin.com/in/luis-vega-8b3779196"
+                class="linkedin"
+                target="_blank"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="social-network">
+              <a
+                href="https://t.me/+525562105997"
+                class="telegram"
+                target="_blank"
+                ><i class="fa fa-telegram" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <footer class="footer"></footer>
-    <script src="/script.js"></script>
+    <footer class="footer">
+      <div class="container">
+        <div class="sec aboutus">
+          <h2>Sobre mí</h2>
+          <p>
+            Como alumno a punto de egresar de la carrera de Ingeniería en
+            Sistemas Computacionales en la Escuela Superior de Cómputo, me
+            encuentro inmerso en la culminación de una etapa académica que ha
+            ampliado mi comprensión de los sistemas informáticos y mi capacidad
+            para abordar desafíos tecnológicos. <br>Durante estos años de formación,
+            he adquirido un sólido conocimiento en programación, diseño de
+            software, redes y sistemas operativos. Mi enfoque ha sido no solo
+            comprender las teorías subyacentes, sino también aplicar estos
+            conocimientos en proyectos prácticos que han fortalecido mis
+            habilidades de resolución de problemas y toma de decisiones.
+          </p>
+          <ul class="sci">
+            <li>
+              <a href="https://www.facebook.com/luisalberto.vegamartinez.12">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/+525562105997">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/luisvega.99/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/+525562105997">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sec contact">
+          <h2>Contactame</h2>
+          <ul class="info">
+            <li>
+              <span>
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <p>
+                <a href="https://wa.me/5562105997" target="_blank">+52 55 62 10 59 97</a>
+              </p>
+            </li>
+            <li>
+              <span>
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <p>
+                <a href="mailto:luisve990110@gmail.com" target="_blank">luisve990110@gmail.com</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
