@@ -294,7 +294,11 @@ h4 {
   background: #444 linear-gradient(to right,transparent
   50%,var(--clr) 0);
   margin: 10px;
+  
 
+}
+.skills h2,.skills p{
+    margin-bottom: 15px;
 }
 .cards-skills .card h3{
     position: absolute;
